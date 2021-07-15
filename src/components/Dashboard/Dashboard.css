@@ -1,0 +1,42 @@
+.Dashboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    min-width: none;
+    margin:220px auto;
+    padding: 5px 20px 5px 20px;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.4); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    line-height: 23px;
+    border: 1px solid rgb(202, 209, 223);
+    border-radius: 10px 10px;
+    overflow: hidden;
+}
+
+.Dashboard-wrapper h2{
+    font:bolder;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+.logout{
+    float: left;
+    width: 80px;
+    height: 40px;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(63, 62, 62, 0.8); /* Black background with 0.5 opacity */
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s;
+    margin: 8px;
+    margin-top: 1mm;
+    margin-left: 2mm;
+}
