@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Dashboard from '../Dashboard/Dashboard.js';
 import Login from '../Login/Login';
 import useToken from './useToken';
@@ -14,26 +14,26 @@ function App() {
     if(!token){
         return(
            <div className="login">
-            <BrowserRouter>
+            <HashRouter>
                 <Switch>
                     <Route path="/login">
                        <Login setToken={setToken} />
                     </Route>
                 </Switch>   
-            </BrowserRouter>
+            </HashRouter>
            </div>
         )
     }
 
     return(
         <div className="dashboard">
-             <BrowserRouter>
+             <HashRouter>
                 <Switch>
                     <Route path="/dashboard">
                         <Dashboard />
                     </Route>
                 </Switch>   
-            </BrowserRouter>
+            </HashRouter>
              </div>
     )
     }    
