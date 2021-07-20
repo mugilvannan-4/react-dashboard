@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom'
 import Dashboard from '../Dashboard/Dashboard.js';
 import Login from '../Login/Login';
 import useToken from './useToken';
