@@ -35,7 +35,7 @@ function Login(props) {
         }); 
         if(token.token){
         props.setToken(token);
-        window.location.href = '/dashboard'
+        window.location.href = '/react-dashboard/dashboard'
         } else {
          setMessage(token.message);   
         }

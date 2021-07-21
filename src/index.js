@@ -4,7 +4,7 @@ import './index.css';
 import App from './components/App/App';
 import { HashRouter} from 'react-router-dom';
 ReactDOM.render(
-    <HashRouter>
+    <HashRouter basename="/login">
        <App />
     </HashRouter>,
   document.getElementById('root')

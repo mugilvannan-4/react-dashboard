@@ -52,7 +52,7 @@ function Register(props) {
         }
 
     function handleback(e) {
-        window.location.href = '/login'
+        window.location.href = '/react-dashboard/login'
     }
     return(
                 <div className="signup-wrapper">
