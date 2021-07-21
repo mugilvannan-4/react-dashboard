@@ -15,29 +15,34 @@ function App() {
     if(!token){
         return(
            <div className="login">
-            <HashRouter>
+            {/* <HashRouter >
                 <Switch>
                     <Route path="/login">
                        <Login setToken={setToken} />
                     </Route>
-                </Switch>   
-            </HashRouter>
+                </Switch>
+            </HashRouter> */}
+              <Login setToken={setToken} />
            </div>
         )
     }
 
     return(
         <div className="dashboard">
-             <HashRouter>
+             {
+                <Dashboard />
+             /* <HashRouter>
                 <Switch>
                     <Route path="/dashboard">
                         <Dashboard />
                     </Route>
-                </Switch>   
-            </HashRouter>
-             </div>
+                </Switch>
+            </HashRouter> */
+            }
+
+         </div>
     )
-    }    
+    }
 
 
 
