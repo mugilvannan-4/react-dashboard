@@ -8,7 +8,7 @@ function Dashboard() {
     const history = useHistory();
     function logout(){
         localStorage.clear();
-        window.location.href = '/react-dashboard/login';
+        window.location.href = '/react-dashboard/#/login';
 
 
     }
