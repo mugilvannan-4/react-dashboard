@@ -9,7 +9,7 @@ function Dashboard() {
     function logout(){
         localStorage.clear();
         window.location.href = '/react-dashboard/#/login';
-        window.location.reload(true)
+        window.location.reload(true);
 
 
     }
