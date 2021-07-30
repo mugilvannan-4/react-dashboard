@@ -16,7 +16,9 @@ function App() {
         return(
            <div className="login">
             {
+                <HashRouter >
              <Login setToken={setToken} />
+             </HashRouter>
             /* <HashRouter >
                 <Switch>
                     <Route path="/login">

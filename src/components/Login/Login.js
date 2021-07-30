@@ -36,6 +36,7 @@ function Login(props) {
         if(token.token){
         props.setToken(token);
         window.location.href = '/react-dashboard/#/dashboard'
+        window.location.reload(true)
         } else {
          setMessage(token.message);   
         }
